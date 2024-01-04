@@ -25,7 +25,7 @@
     #041048 64.08%,
     #01013f
   );
-  width: 1728px;
+  width: 100%;
   height: 450px;
 }
 .e7b1c79e-c83e-40e2-8333-16a6e2-icon {
@@ -50,7 +50,7 @@
 .group-item,
 .lets-talk {
   position: absolute;
-  top: 0;
+  top: -1vh;
   left: 16px;
 }
 .group-item {
@@ -76,7 +76,7 @@
 .rectangle-parent {
   position: absolute;
   top: 0;
-  left: 975px;
+  left: 80%;
   width: 195px;
   height: 60px;
 }
@@ -114,7 +114,7 @@
   position: absolute;
   top: 0;
   left: 0;
-  width: 530px;
+  width: 100%;
   height: 10px;
 }
 .group-inner {
@@ -128,7 +128,7 @@
 .group-parent {
   position: absolute;
   top: 20.5px;
-  left: 325px;
+  left: 20vw;
   width: 530px;
   height: 19px;
   font-size: var(--font-size-sm);
@@ -136,7 +136,7 @@
 .e7b1c79e-c83e-40e2-8333-16a6e2-parent {
   position: absolute;
   top: 15px;
-  left: 279px;
+  left: 15vw;
   width: 1170px;
   height: 62px;
   font-size: var(--font-size-lg);
@@ -145,7 +145,7 @@
 .services2 {
   position: absolute;
   top: 224.99px;
-  left: calc(50% - 585px);
+  left: 15vw;
   font-size: 88px;
   font-family: var(--font-dm-sans);
   color: var(--color-white);
@@ -1682,7 +1682,7 @@
 .group-container {
   position: absolute;
   height: 18.07%;
-  width: 100.12%;
+  width: 100%;
   top: 81.94%;
   right: -0.12%;
   bottom: -0.01%;
@@ -1899,13 +1899,13 @@
   left: calc(50% - 256px);
 }
 .lorem-ipsum-dolor {
-  top: 67px;
+  top: -38px;
   line-height: 24px;
   display: inline-block;
   width: 512px;
 }
 .product-design {
-  top: 0;
+  top: -80px;
   font-size: var(--font-size-21xl);
   line-height: 40px;
   font-family: var(--font-hind);
@@ -1914,7 +1914,7 @@
 .lorem-ipsum-dolor-sit-amet-co-parent {
   position: absolute;
   top: 110.48px;
-  left: calc(50% + 38.85px);
+  left: calc(50% + 58.85px);
   width: 512px;
   height: 245px;
 }
@@ -1930,8 +1930,8 @@
 .lorem-ipsum-dolor-sit-amet-co-group {
   position: absolute;
   top: 550px;
-  left: calc(50% - 550.85px);
-  width: 1101.7px;
+  left: 10vw;
+  width: 100%;
   height: 465.96px;
 }
 .lorem-ipsum-dolor-sit-amet-co-group {
@@ -1963,7 +1963,7 @@
 .group-parent16 {
   position: absolute;
   top: 0;
-  left: 635.74px;
+  left: 45vw;
   width: 465.96px;
   height: 465.96px;
 }
@@ -2062,4 +2062,125 @@
   font-size: var(--font-size-sm);
   color: var(--color-lightslategray);
   font-family: var(--font-poppins);
+}
+
+@media screen and (max-width: 575px) {
+  .group-parent {
+    display: none;
+  }
+  .services-inner{
+    height: 100vh;
+  }
+  .group-parent14{
+    top: 110vh;
+  }
+  .background-complete-parent {
+    position: absolute;
+    height: 6.08%;
+    width: 20.88%;
+    top: 4.66%;
+    left: 38%;
+    transform: translateX(-90%);
+}
+  .e7b1c79e-c83e-40e2-8333-16a6e2-icon {
+    left: -10vw;
+    height: 40px;
+    width: fit-content;
+  }
+  .services2{
+    top: 500.99px;
+    left: 20%;
+    font-size: 4em;  
+
+  }
+  .rectangle-parent{
+    left: 45vw;
+  }
+  .group-parent13 {
+    left: 7vw;
+    
+  }
+  .lets-talk1 {
+    top:-1vh;
+  }
+  .group-child73 {
+    left: 2vw;
+    width: 95%;
+  }
+  .rectangle-parent4 {
+    left: 1vw;
+    width: 100%;
+  }
+  .group-child75, .shadows-1-parent{
+    height: fit-content;
+    width: fit-content;
+    display: none;
+  }
+  .background-complete {
+    top:.1%;
+  }
+}
+
+/* Media query for screens between 576px and 767px */
+@media screen and (min-width: 576px) and (max-width: 767px) {
+  .group-parent {
+    display: none;
+  }
+  .services-inner{
+    height: 100vh;
+  }
+  .background-complete-parent {
+    position: absolute;
+    height: 6.08%;
+    width: 20.88%;
+    top: 4.66%;
+    left: 50%;
+    transform: translateX(-90%);
+}
+  .e7b1c79e-c83e-40e2-8333-16a6e2-icon {
+    left: -10vw;
+  }
+  .services2{
+    top: 561.99px;
+    left: 25%;  
+
+  }
+  .group-parent14{
+    top: 110vh;
+  }
+  .rectangle-parent{
+    left: 50vw;
+  }
+  .group-parent15{
+    display:none;
+  }
+  .group-child75, .shadows-1-parent{
+    height: fit-content;
+    width: fit-content;
+    display: none;
+  }
+  .group-parent13 {
+    left: 7vw;
+  }
+  .lets-talk1 {
+    top:-1vh;
+  }
+  .group-child73 {
+    left: 2vw;
+    width: 95%;
+  }
+  .rectangle-parent4 {
+    left: 1vw;
+    width: 100%;
+  }
+}
+
+/* Media query for screens between 768px and 991px */
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  /* Add more styles as needed */
+}
+
+/* Media query for screens larger than or equal to 992px */
+@media screen and (min-width: 992px) {
+  /* Add more styles as needed */
 }
