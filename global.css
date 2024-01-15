@@ -1,0 +1,486 @@
+@import url("https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css");
+@import url("https://fonts.googleapis.com/css?family=Hind:500,700,600|Poppins:600,500,400,700|DM+Sans:700");
+* {
+  -webkit-font-smoothing: antialiased;
+  box-sizing: border-box;
+}
+html,
+body {
+  margin: 0px !important;
+  height: 70%;
+}
+
+/* a blue color as a generic focus style */
+button:focus-visible {
+  outline: 2px solid #4a90e2 !important;
+  outline: -webkit-focus-ring-color auto 5px !important;
+}
+a {
+  text-decoration: none;
+}
+
+body {
+  margin: 0px !important;
+  line-height: normal;
+  font-family: Hind;
+}
+
+:root {
+  /* fonts */
+  --font-dm-sans: "DM Sans";
+  --font-poppins: Poppins;
+  --font-hind: Hind;
+  --font-montserrat: Montserrat;
+
+  /* font sizes */
+  --font-size-3xl: 22px;
+  --font-size-base: 16px;
+  --font-size-31xl: 50px;
+  --font-size-21xl: 40px;
+  --font-size-sm: 14px;
+  --font-size-lg: 18px;
+  --font-size-13xl: 32px;
+
+  /* Colors */
+  --color-white: #fff;
+  --color-black: #000;
+  --color-lightslategray: #8f96a1;
+  --primary-color: #199adc;
+  --color-gray-100: rgba(255, 255, 255, 0.1);
+  --color-cornflowerblue: #0071bf;
+  --color-gainsboro: #e7e7e7;
+  --color-whitesmoke: #f8f8f8;
+
+  /* Border radiuses */
+  --br-12xs-5: 0.5px;
+  --br-8xs: 5px;
+  --br-81xl: 100px;
+  --br-3xs: 10px;
+}
+
+.image {
+  height: fit-content;
+  width: fit-content;
+}
+
+.mui-grid {
+  display: flex;
+  flex-wrap: wrap;
+  margin: -16px; /* Negative margin to counteract spacing */
+}
+
+/* Individual grid item */
+.mui-grid-item {
+  flex: 1;
+  box-sizing: border-box;
+  padding: 16px; /* Spacing between grid items */
+  min-width: 0; /* Allow items to shrink */
+}
+
+/* Header styles */
+.header {
+  background-color: transparent;
+  color: white;
+  padding: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header img {
+  width: 213px; /* Adjust the width as needed */
+}
+
+/* Regular Navigation styles */
+.nav {
+  display: flex;
+  justify-content: center;
+  flex: 1;
+}
+
+.nav a {
+  color: white;
+  font-size: 1rem;
+  margin: 1rem;
+  text-decoration: none;
+}
+@media (min-width: 900px) {
+  
+  .letsTalkButton {
+    width: 171px!important;
+  }
+}
+
+/* Button styles */
+.letsTalkButton {
+  background-color: #199adc;
+  color: white;
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* Drawer styles */
+.drawer {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.9); /* Semi-transparent background */
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.drawer a {
+  color: white;
+  font-size: 1.5rem;
+  margin: 1rem;
+  text-decoration: none;
+}
+
+/* Close button for the drawer */
+.close-button {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  color: white;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+@media (min-width: 769px) {
+  .menu-button {
+    display: none;
+  }
+  
+}
+
+/* Media query for small screens */
+@media (max-width: 768px) {
+  .header .nav {
+    display: none; /* Hide the regular navigation on small screens */
+  }
+  .nav a {
+    font-size: 0.7rem;
+  }
+  .header{
+    padding: 2rem;
+  }
+  .letsTalkButton {
+    display: none; /* Hide the button on small screens */
+  }
+
+  .menu-button {
+    display: block; /* Display the menu button on small screens */
+  }
+
+  .drawer {
+    display: none; /* Display the drawer when open */
+  }
+}
+
+@media (max-width: 1200px) {
+  .mui-grid-item {
+    flex-basis: 20%; /* Full width on small screens */
+  }
+}
+@media (max-width: 1000px) {
+  .mui-grid-item {
+    flex-basis: 30%; /* Full width on small screens */
+  }
+}
+@media (max-width: 800px) {
+  .mui-grid-item {
+    flex-basis: 50%; /* Full width on small screens */
+  }
+}
+@media (max-width: 600px) {
+  .mui-grid-item {
+    flex-basis: 100%; /* Full width on small screens */
+  }
+}
+
+.mui-card-header {
+  padding: 16px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.mui-card {
+  border: 1px solid #e0e0e0;
+  border-radius: 4px;
+  overflow: hidden;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  width: 300px; /* Set your desired width */
+}
+
+/* Styles for the card content */
+.mui-card-content {
+  padding: 16px;
+}
+
+/* Optional: Add hover effect */
+.mui-card:hover {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.letsTalkButton {
+  border-radius: 100px;
+  border: 1px solid #fff;
+  background: rgba(255, 255, 255, 0.1);
+  width: 195px;
+  height: 60px;
+  flex-shrink: 0;
+}
+
+.letsTalkButton div {
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  /* margin-top: 15px; */
+  margin-left: -2px;
+  color: #ffffff !important;
+}
+
+.ellipseThree {
+  position: absolute;
+  top: 500px;
+  left: 300px;
+  animation: shakeX 10s infinite, shakeY 10s infinite;
+}
+
+.ellipseOne {
+  position: absolute;
+  top: 200px;
+  left: 300px;
+  animation: shakeX 8s infinite, shakeY 9s infinite;
+}
+
+.footerMainText {
+  color: #fff;
+  text-align: center;
+  leading-trim: both;
+  text-edge: cap;
+  font-family: Hind;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 60px; /* 187.5% */
+}
+.footerSecondText {
+  color: #fff;
+  text-align: center;
+  leading-trim: both;
+  text-edge: cap;
+  font-family: Poppins;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 22px; /* 122.222% */
+}
+.footerContactText {
+  color: #fff;
+  leading-trim: both;
+  text-edge: cap;
+  font-family: Poppins;
+  font-size: 18px;
+  font-style: normal;
+  text-align: center;
+  font-weight: 700;
+  line-height: normal;
+}
+
+@keyframes shakeX {
+  0%,
+  100% {
+    transform: translateX(-50%);
+  }
+  10%,
+  30%,
+  50%,
+  70%,
+  90% {
+    transform: translateX(-55%);
+  }
+  20%,
+  40%,
+  60%,
+  80% {
+    transform: translateX(-45%);
+  }
+}
+
+@keyframes shakeY {
+  0%,
+  100% {
+    transform: translateY(-50%);
+  }
+  10%,
+  30%,
+  50%,
+  70%,
+  90% {
+    transform: translateY(-55%);
+  }
+  20%,
+  40%,
+  60%,
+  80% {
+    transform: translateY(-45%);
+  }
+}
+
+.ellipseTwo {
+  position: absolute;
+  top: 250px;
+  left: 600px;
+  animation: shakemX 5s infinite, shakemY 10s infinite;
+}
+
+@keyframes shakemX {
+  0%,
+  100% {
+    transform: translateX(-15%);
+  }
+  10%,
+  30%,
+  50%,
+  70%,
+  90% {
+    transform: translateX(-15%);
+  }
+  20%,
+  40%,
+  60%,
+  80% {
+    transform: translateX(-15%);
+  }
+}
+
+@keyframes shakemY {
+  0%,
+  100% {
+    transform: translateY(-15%);
+  }
+  10%,
+  30%,
+  50%,
+  70%,
+  90% {
+    transform: translateY(-15%);
+  }
+  20%,
+  40%,
+  60%,
+  80% {
+    transform: translateY(-15%);
+  }
+}
+
+@media (max-width: 999px) {
+  .ellipseThree {
+    position: absolute;
+    top: 600px;
+    left: 100px;
+  }
+
+  .ellipseOne {
+    position: absolute;
+    top: 200px;
+    left: 200px;
+  }
+  .ellipseTwo {
+    position: absolute;
+    top: 250px;
+    left: 400px;
+  }
+}
+@media (max-width: 800px) {
+  .ellipseTwo {
+    position: absolute;
+    top: 250px;
+    left: 200px;
+  }
+}
+@media (max-width: 500px) {
+  .ellipseTwo {
+    display: none;
+  }
+}
+@media (max-width: 900px) {
+  .letsTalkButton {
+    border-radius: 100px;
+    border: 1px solid #fff;
+    background: rgba(255, 255, 255, 0.1);
+    width: 155px;
+    height: 50px;
+    flex-shrink: 0;
+  }
+  .letsTalkButton div {
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    margin-top: 5px;
+    /* margin-left: 10px; */
+    color: #ffffff !important;
+  }
+}
+
+.css-4t3x6l-MuiPaper-root-MuiDrawer-paper {
+  background: radial-gradient(
+    112.53% 60.02% at 58.13% 32.31%,
+    #041048 54.08%,
+    #01013f 100%
+  ) !important;
+}
+.css-wf16b5 {
+  background: radial-gradient(
+    112.53% 60.02% at 58.13% 32.31%,
+    #041048 54.08%,
+    #01013f 100%
+  ) !important;
+}
+
+.logo {
+  width: 253px;
+  height: 61px;
+}
+
+/* testimonial section */
+.testimonial_review {
+  top: 70%;
+  left: 50%;
+  width: 45%;
+}
+/* .testimonial_section{
+  position: relative;
+  background-image: url('/public/images/EllipseLeft.png');
+   background-size: cover;
+   background-position: right top;
+} */
+@media only screen and (max-width: 1023px) {
+  .testimonial_section {
+    padding-bottom: 175px;
+  }
+  .testimonial_image {
+    width: 20%;
+    height: 20%;
+  }
+  .testimonial_review {
+    top: 100%;
+    left: 45%;
+    width: 95%;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .testimonial_review {
+    top: 150%;
+    left: 45%;
+    width: 95%;
+  }
+}

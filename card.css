@@ -1,0 +1,180 @@
+.card {
+    height: 290px!important;
+    top: 5769.63px;
+    border-left: 1px solid white;
+    border-right: 1px solid white;
+    background: black!important;
+    color: white!important;
+  }
+  .homeScreenCard {
+    border-radius: 10px;
+    background: #fff;
+    box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.1);
+    width: 265.746px;
+    height: 251px;
+    text-align: center;
+    flex-shrink: 0;
+  }
+  
+  .contactScreenCard {
+    border-radius: 10px;
+    background: #fff;
+    box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.1);
+    width: 265.746px;
+    height: 251px;
+    flex-shrink: 0;
+  }
+  
+  .cardMainText {
+    color: #000;
+    font-family: Hind;
+    font-size: 50px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+  }
+  .contactScreenMainText {
+    color: #000;
+    font-family: Hind;
+    font-size: 19px;
+    font-style: normal;
+    width: 100%;
+    font-weight: 700;
+    line-height: 20px;
+  }
+  .contactScreenSecondaryText {
+    color: #8f96a1;
+    font-family: Poppins;
+    font-size: 12px;
+    width: 100%;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 15px;
+    width: 100%;
+  }
+  .cardSecondaryText {
+    color: #8f96a1;
+    font-family: Poppins;
+    font-size: 12px;
+    width: 100%;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 22px;
+    width: 100%;
+  }
+  
+  .lowerDivClass {
+    border-radius: 20px;
+    background: #f5f6fa;
+    color: #000;
+    font-family: Hind;
+    font-style: normal;
+    box-shadow: none;
+  }
+  .lowerDivMainText {
+    color: #000;
+    font-family: Hind;
+    font-size: 50px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 60px; /* 120% */
+  }
+  .lowerDivSecondaryText {
+    color: #8f96a1;
+    leading-trim: both;
+    font-family: Poppins;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 22px; /* 157.143% */
+  }
+  
+  .lowerLetsTalkButton {
+    border-radius: 100px;
+    border: 1px solid #fff;
+    color: #fff;
+    background: #199adc;
+    width: 195px;
+    height: 60px;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    flex-shrink: 0;
+    margin-top: 8px;
+    margin-left: 10px;
+    color: #ffffff !important;
+  }
+  
+  
+  /* CustomCardStyles.css */
+  
+  .servicesCard {
+    max-width: 70%;
+    margin: auto;
+    background: none;
+    box-shadow: none;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  .stylesTitle {
+    color: #000;
+    font-family: Hind;
+    font-size: 40px;
+    margin-bottom: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 40px; /* 100% */
+  }
+  
+  .mainContent {
+    width: 50%;
+  }
+  
+  .stylesContent {
+    color: #8f96a1;
+    font-family: Poppins;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px; /* 171.429% */
+  }
+  
+  .stylesMedia {
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+  }
+  
+  @media only screen and (max-width: 900px) {
+    .homeScreenCard {
+      width: 250.746px;
+      height: 200px;
+      margin-bottom: 10px;
+    }
+  }
+  
+  @media only screen and (max-width: 600px) {
+    .servicesCard {
+      flex-direction: column;
+    }
+    .contactScreenSecondaryText {
+      font-size: 10px;
+      line-height: 10px;
+    }
+    
+    .mainContent {
+      width: 100%;
+    }
+    .stylesContent {
+      font-size: 0.8em;
+    }
+    .cardMainText{
+      font-size: 2em;
+      
+    }
+    .contactScreenMainText{
+      font-size: 15px;
+    }
+  }
+  

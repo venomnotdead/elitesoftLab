@@ -1,0 +1,1316 @@
+.homeSection {
+    height: 100vh;
+    width: 100vw;
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    margin: 0px !important;
+    line-height: normal;
+    background: radial-gradient(
+      112.53% 60.02% at 58.13% 32.31%,
+      #0b335d 0%,
+      #041048 64.08%,
+      #01013f 100%
+    ) !important;
+  }
+  
+  
+  .homeScreenDiv{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    min-height: 80vh;
+  }
+  
+  .homeScreenMainText{
+    color: #FFF;
+  leading-trim: both;
+  text-edge: cap;
+  font-family: DM Sans;
+  font-size: 88px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 95px; /* 107.955% */
+  }
+  
+  .homeScreenLowerText{
+    color: #FFF;
+  leading-trim: both;
+  text-edge: cap;
+  font-family: Poppins;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 32px; /* 177.778% */
+  }
+  
+  .grid {
+    width: 100%;
+  }
+  .parts {
+    width: 100%;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    height: 100%;
+  }
+  
+  .parts:first-child {
+    margin-top: 5%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .partSecond {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+  }
+  /* 
+  .parts:nth-child(2) {
+    margin-top: 20px;
+  } */
+  
+  .mainText {
+    color: #fff;
+    font-family: DM Sans;
+    font-size: 70px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+  }
+  .secondaryText {
+    color: #fff;
+    font-family: Poppins;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 32px;
+    margin-top: 10px;
+  }
+  .image {
+    width: 400px;
+    height: fit-content;
+    overflow: hidden;
+  }
+  .otherImage {
+    width: 400px;
+    height: fit-content;
+    overflow: hidden;
+  }
+  
+  .secondScreen {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+   
+    margin-top: 0;
+    min-height: 60vh;
+  }
+  
+  .contactScreenMainDiv {
+    width: 100%;
+    min-height: 100vh;
+    background: #f8f8f8;
+  }
+  
+  .secondaryScreenMain {
+    color: #000;
+    text-align: center;
+    font-family: Hind;
+    font-size: 50px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 60px; /* 120% */
+  }
+  .secondScreenSecondDiv {
+    width: 100%;
+    /* margin-top: 40px; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .secondScreenSecondDiv div {
+    display: flex;
+    /* flex-direction: column; */
+    width: 80%;
+    justify-content: space-evenly;
+  }
+  
+  .contactScreenMainText {
+    color: #000;
+    text-align: center;
+    leading-trim: both;
+    text-edge: cap;
+    font-family: Hind;
+    font-size: 50px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 60px; /* 120% */
+  }
+  .contactScreenMainContext {
+    color: #8f96a1;
+    text-align: center;
+    leading-trim: both;
+    text-edge: cap;
+    font-family: Poppins;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 32px; /* 200% */
+  }
+  
+  .thirdScreen {
+    background: #f8f8f8;
+    /* height: 50vh; */
+    width: 100%;
+    min-height: 100%;
+  }
+  .thirdScreenMainText {
+    color: #000;
+    font-family: Hind;
+    margin-top: 50px;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 60px; /* 272.727% */
+  }
+  .aboutScreenEndingText {
+    color: #000;
+    text-align: center;
+    margin-top: 5%;
+    font-family: Hind;
+    font-size: 50px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 60px; /* 120% */
+  }
+  
+  .aboutScreenThirdScreen {
+    background: #f8f8f8;
+    width: 100%;
+    min-height: 668px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+  }
+  
+  .ourGallery {
+    width: 100%;
+    min-height: 80vh;
+    margin-top: 2vh;
+    background: #f8f8f8;
+  }
+  .ourGalleryText {
+    margin-top: 20vh;
+    color: #000;
+    text-align: center;
+    leading-trim: both;
+    text-edge: cap;
+    font-family: Hind;
+    font-size: 50px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 60px; /* 120% */
+  }
+  
+  .aboutScreenThirdScreen div {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .aboutSecondDiv {
+    flex-direction: column;
+  }
+  .message {
+    color: #199adc;
+    text-align: right;
+    leading-trim: both;
+    text-edge: cap;
+    font-family: Poppins;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 32px; /* 177.778% */
+  }
+  .charimanName {
+    color: #000;
+    text-align: center;
+    leading-trim: both;
+    text-edge: cap;
+    font-family: Hind;
+    font-size: 50px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 60px; /* 120% */
+  }
+  .jobPosition {
+    color: #8f96a1;
+    leading-trim: both;
+    text-edge: cap;
+    font-family: Poppins;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 32px; /* 177.778% */
+  }
+  .iconsSvgs {
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+  .mainMessage {
+    color: #8f96a1;
+    text-align: center;
+    font-family: Poppins;
+    font-size: 16px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 28px; /* 175% */
+  }
+  .letsTalkButton {
+    border-radius: 100px;
+    border: 1px solid #fff;
+    color: #fff;
+    background: #199adc;
+    height: 60px;
+    width: 215px;
+    height: 60px;
+    flex-shrink: 0;
+    flex-shrink: 0;
+  }
+  .letsTalkButton div {
+    justify-content: center;
+    display: flex;
+    /* width: 215px; */
+    align-items: center;
+    /* margin-top: px; */
+    margin-left: 10px;
+    color: #ffffff !important;
+  }
+  
+  .imageFieldMainText {
+    color: #010101;
+    text-align: center;
+    leading-trim: both;
+    text-edge: cap;
+    font-family: Hind;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+  }
+  .imageFieldSecondaryText {
+    color: #8f96a1;
+    text-align: center;
+    leading-trim: both;
+    text-edge: cap;
+    font-family: Poppins;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 18px; /* 175% */
+  }
+  
+  .imageCardGallery {
+    margin-top: 10vh;
+    margin-bottom: 10vh;
+    display: flex;
+    justify-content: center;
+  }
+  .imageCardGallery div {
+    width: 90%;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .Home_imageCardGallery__MrRs3 div {
+    flex-direction: column;
+  }
+  .industryCard {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    flex-direction: column;
+  }
+  .industryCardSecondary {
+    display: flex;
+    justify-content: space-around;
+  }
+  
+  .galleryGrid {
+    width: 60%;
+  }
+  .parentGrid {
+    display: flex;
+    justify-content: center;
+    /* margin-bottom: 10vh; */
+  }
+  .formDiv {
+    width: 100%;
+    min-height: 80vh;
+    background: #f8f8f8;
+  }
+  
+  .formDivMainText {
+    color: #000;
+    font-family: Hind;
+    font-size: 50px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 60px;
+  }
+  .formDivSecondaryText {
+    color: #8f96a1;
+    text-align: center;
+    font-family: Poppins;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 32px; /* 200% */
+  }
+  
+  .formDivUpperdiv {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+  .formDivLowerDiv {
+    display: flex;
+    margin-top: 2vh;
+    width: 100%;
+    align-content: center;
+    justify-content: center;
+  }
+  .lowerLetsTalkButton {
+    border-radius: 100px;
+    border: 1px solid #fff;
+    color: #fff;
+    background: #199adc;
+    width: 141px;
+    height: 60px;
+    flex-shrink: 0;
+  }
+  .lowerLetsTalkButton p {
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    margin-top: 8px;
+    /* margin-left: 5px; */
+    width: 100%;
+    color: #ffffff !important;
+  }
+  
+  .lowerLetsTalkButton section {
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    margin-top: 8px;
+    /* margin-left: 5px; */
+    width: 100%;
+    color: #ffffff !important;
+  }
+  
+  .lowerLetsTalkButtonSecond {
+    border-radius: 100px;
+    border: 1px solid #fff;
+    color: #fff;
+    width: 153px !important;
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 60px;
+    flex-shrink: 0;
+    background: #199adc;
+    width: 141px;
+    height: 60px;
+    flex-shrink: 0;
+  }
+  .lowerLetsTalkButtonSecond div {
+    justify-content: center;
+    display: flex;
+    align-items: center;
+  
+    width: 253px;
+    margin-top: 8px;
+    /* margin-left: 5px; */
+    width: 100%;
+    color: #ffffff !important;
+  }
+  
+  .centralDiv {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .productMainText {
+    color: #000;
+    leading-trim: both;
+    text-edge: cap;
+    font-family: Hind;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 60px; /* 250% */
+  }
+  .productSecondaryText {
+    color: #8f96a1;
+    leading-trim: both;
+    text-edge: cap;
+    font-family: Poppins;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px; /* 171.429% */
+  }
+  .productButtonText {
+    color: #199adc;
+    leading-trim: both;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    font-family: Poppins;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+  }
+  
+  .centralDiv div {
+    width: 283.743px;
+    margin-left: 30px;
+  }
+  
+  .formDivLowerDiv div {
+    width: 70%;
+  }
+  .textField {
+    margin: 3%;
+    margin-right: 4%;
+    margin-left: 4%;
+    width: 90%;
+    height: 51px;
+    flex-shrink: 0;
+    border-radius: 10px;
+    background: #fff;
+    border: 0px solid white;
+    leading-trim: both;
+    text-edge: cap;
+    font-family: Poppins;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+  .textFieldMessage {
+    height: 255px;
+    color: #000;
+    margin: 3%;
+    margin-right: 4%;
+    margin-left: 4%;
+    width: 100%;
+    flex-shrink: 0;
+    border-radius: 10px;
+    background: #fff;
+    border: 0px solid white;
+  }
+  .textfieldmessage::placeholder {
+    leading-trim: both;
+    text-edge: cap;
+    font-family: Poppins;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+  
+  .messageDiv {
+    display: flex;
+    /* align-items: center; */
+    flex-direction: column!important;
+    /* justify-content: flex-start; */
+    align-items: flex-start;
+    width: 100%;
+  }
+  
+  .messageDiv p input {
+    margin-left: 40px;
+    margin-top: 5px;
+  }
+  
+  .messageCheckBox {
+    color: #8f96a1;
+    leading-trim: both;
+    text-edge: cap;
+    font-family: Poppins;
+    display: flex;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 28px; /* 175% */
+    display: flex;
+    align-items: flex-start;
+    /* width: 100%; */
+    justify-content: center;
+  }
+  
+  .textField::placeholder {
+    leading-trim: both;
+    text-edge: cap;
+    font-family: Poppins;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+  .formDivUpperdiv div {
+    height: 50%;
+    margin-top: 2vh;
+  }
+  
+  .overlapT {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 168px;
+    height: 168px;
+    border-radius: 84.1px;
+    border: 2px dashed;
+    border-color: #35d453;
+  }
+  
+  .overlapB {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 168px;
+    height: 168px;
+    border-radius: 84.1px;
+    border: 2px dashed;
+    border-color: #199adc;
+  }
+  .overlapS {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 94.228px;
+    height: 94.228px;
+    flex-shrink: 0;
+    border-radius: 84.1px;
+    border: 2px dashed;
+    border-color: #199adc;
+  }
+  .overlapG {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 94.228px;
+    height: 94.228px;
+    flex-shrink: 0;
+    border-radius: 84.1px;
+    border: 2px dashed;
+    border-color: #35d453;
+  }
+  .greenCirle {
+    width: 81.821px;
+    height: 81.9px;
+    border-radius: 100%;
+    background-color: #35d453;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .blueCirle {
+    width: 81.821px;
+    height: 81.9px;
+    border-radius: 100%;
+    background-color: #199adc;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .whiteCircle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 150px;
+    height: 150px;
+    background-color: #ffffff;
+    border-radius: 74.79px;
+    box-shadow: 0px 0px 20px #0000001a;
+  }
+  .aboutCardContent {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #000;
+    text-align: center;
+    leading-trim: both;
+    text-edge: cap;
+    font-family: Hind;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 600;
+    margin: 20px;
+    line-height: 30px; /* 125% */
+  }
+  .ourProductsScreen {
+    background-color: #f8f8f8;
+    min-height: 120vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    /* min-height: 80vh; */
+  }
+  .screenFourSection {
+    width: 100%;
+    min-height: 70vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .verticalClass {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .verticalClassSecond {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .verticalClassSquare div {
+    margin-left: 15px;
+  }
+  .verticalClassSecondaryText {
+    color: #fff;
+    leading-trim: both;
+    text-edge: cap;
+    font-family: Poppins;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px; /* 171.429% */
+  }
+  .verticalClassSquare {
+    width: 376px;
+    height: 345px;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    flex-shrink: 0;
+    border-radius: 10px;
+    background: #199adc;
+  }
+  .verticalClassMainText {
+    color: #fff;
+    leading-trim: both;
+    text-edge: cap;
+    font-family: Hind;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 30px; /* 136.364% */
+  }
+  .verticalClassRectangle {
+    width: 101px;
+    height: 345px;
+    flex-shrink: 0;
+    border-radius: 10px;
+    opacity: 0.8;
+    background: #000;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin: 1vw;
+  }
+  .maskOne{
+    background-image: url(../public/images/Mask\ group\ \(7\).png);
+  }
+  .maskTwo{
+    background-image: url(../public/images/Mask\ group\ \(8\).png);
+  }
+  .maskThree{
+    background-image: url(../public/images/Mask\ group\ \(14\).png);
+  }
+  .maskFour{
+    background-image: url(../public/images/Mask\ group\ \(10\).png);
+  }
+  .maskFive{
+    background-image: url(../public/images/Mask\ group\ \(11\).png);
+  }
+  .maskSix{
+    background-image: url(../public/images/Mask\ group\ \(12\).png);
+  }
+  .maskSeven{
+    background-image: url(../public/images/Mask\ group\ \(13\).png);
+  }
+  
+  .verticalClassRectangle:hover{
+    width: 370px;
+  }
+  
+  .verticalClassRectangle div {
+    transform: rotate(-90deg);
+    color: #fff;
+    leading-trim: both;
+    text-edge: cap;
+    font-family: Hind;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+  }
+  .fifthScreenMain {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+    align-items: center;
+  }
+  .fifthSubMain {
+    width: 432px;
+    height: 204px;
+    margin: 10px;
+    flex-shrink: 0;
+    border-radius: 20px;
+    background: #fff;
+  }
+  .screenFiveSection {
+    background-color: #f8f8f8;
+    width: 100%;
+    min-height: 50vh;
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  
+  .fifthScreenMainText {
+    color: var(--primary-color, #199adc);
+    leading-trim: both;
+    text-edge: cap;
+    font-family: Hind;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 60px;
+    margin-left: 10px;
+  }
+  .fifthScreenSubText {
+    color: #333;
+    leading-trim: both;
+    text-edge: cap;
+    font-family: Poppins;
+    margin-left: 10px;
+    font-size: 10px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 22px; /* 220% */
+  }
+  .fifthScreenContentText {
+    color: #8f96a1;
+    leading-trim: both;
+    text-edge: cap;
+    font-family: Poppins;
+    margin-left: 10px;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 22px; /* 183.333% */
+  }
+  .css-1fyyp8j-MuiGrid-root {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .whatWeDoBestSection{
+    min-height: 90vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: centeru;
+  }
+  
+  .whatWeDoBestSectionMainText{
+    color: #000;
+  leading-trim: both;
+  text-edge: cap;
+  font-family: Hind;
+  font-size: 40px;
+  font-style: normal;
+  width: 100%;
+  font-weight: 700;
+  line-height: 50px; 
+  padding: 10px;
+  }
+  .whatWeDoBestSectionSecondText{
+    color: #8F96A1;
+  leading-trim: both;
+  text-edge: cap;
+  font-family: Poppins;
+  font-size: 10px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px; /* 200% */
+  padding: 10px;
+  }
+  .whatWeDoBestLowerDiv{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .whatWeDoBestLowerDivSecond{
+    display: flex;
+    justify-content: space-around;
+  }
+  .greenMainText{
+    color: #35D453;
+  leading-trim: both;
+  text-edge: cap;
+  font-family: Hind;
+  font-size: 20px;
+  font-style: normal;
+  /* padding: 10px; */
+  font-weight: 700;
+  line-height: 25px; /* 250% */
+  }
+  
+  .homeScreenUpperDiv{
+    width: 50%;
+  }
+  
+  .homeScreenMainTextSecond{
+    color: #FFF;
+  leading-trim: both;
+  text-edge: cap;
+  font-family: DM Sans;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 59px;
+  line-height: normal;
+  }
+  
+  .homeScreenLowerTextSecond{
+    color: #FFF;
+  leading-trim: both;
+  text-edge: cap;
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 32px; /* 177.778% */
+  }
+  
+  .lowerText{
+    color: #8F96A1;
+  leading-trim: both;
+  text-edge: cap;
+  font-family: Poppins;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 25px; /* 175% */
+  }
+  
+  .homeCardGreen{
+    width: 374px;
+  height: 285.5px;
+  flex-shrink: 0;
+  border-radius: 20px;
+  /* border: 1px solid #35D453; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #FFF;
+  }
+  .homeCardSvgGreen{
+    /* position: absolute; */
+    top: 10px;
+    margin-bottom: px;
+    border: 18px solid white;
+    /* left: '10px'; */
+    
+  }
+  
+  .whatWeDoBestSectionUpperText{
+    display: flex;
+    justify-content: space-around;
+  }
+  
+  .blueMainText{
+    color: #199ADC;
+  leading-trim: both;
+  text-edge: cap;
+  font-family: Hind;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 25px; /* 250% */
+  }
+  
+  @media only screen and (max-width: 1100px) {
+  
+    .css-480o17-MuiGrid-root {
+      box-sizing: border-box;
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-flex-wrap: wrap;
+      align-items: center;
+      min-height: 80vh;
+      -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+      width: 100%;   
+      flex-direction: row;
+      margin-left: -33px;
+      width: calc(100% + 32px);
+    }
+    .parts div{
+      display: flex;
+      text-align: center;
+      flex-direction: column;
+      align-items: center;
+      justify-content: centers;
+    }
+  
+  
+    .slideshow {
+      position: relative;
+      overflow: hidden;
+      width: 300px; /* Adjust the width as needed */
+      height: 260px; /* Adjust the height as needed */
+    }
+  }
+  
+  @media only screen and (max-width: 600px) {
+    .homeScreenLowerDiv{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+    }
+  
+    .homeScreenDiv{
+      min-height: 90vh;
+    }
+    
+    .image {
+      /* display: none; */
+      /* height: 250px!important;
+      width: 250px!important; */
+    }
+    .manImage{
+      height: 50%;
+      width: 50%;
+    }
+    .mainMessage{
+      padding: 10px;
+    }
+    .ourGallery {
+      min-height: 100%;
+    }
+    .formDivLowerDiv div {
+      width: 90%!important;
+    }
+   
+    .verticalClassRectangle:hover{
+      width: 90%;
+    }
+    .container { 
+      height: 40vh!important;
+    }
+    @keyframes slideAnimation2 {
+      0% {
+        opacity: 0;
+        transform: translateX(100%);
+      }
+      5% {
+        opacity: 1;
+        transform: translateX(0);
+      }
+      30% {
+        opacity: 1;
+        transform: translateX(0);
+      }
+      35% {
+        opacity: 0;
+        transform: translateX(0);
+      }
+      100% {
+        opacity: 0;
+        transform: translateX(-100%);
+      }
+    }
+    .slide:nth-child(1) {
+      animation: slideAnimation2 12s infinite;
+    }
+    
+    .slide:nth-child(2) {
+      animation: slideAnimation2 12s 4s infinite;
+    }
+    
+    .slide:nth-child(3) {
+      animation: slideAnimation2 12s 8s infinite;
+    }
+  }
+  @media only screen and (max-width: 850px) {
+    .image{
+      height: 100%;
+      width: 25%;
+    }
+  }
+  
+  @media only screen and (max-width: 1200px) {
+    .verticalClassSecond {
+      flex-direction: column;
+    }
+    .slideshow {
+      width: 400px!important;
+      height: 300px!important;
+    }
+    .verticalClassRectangle {
+      width: 345px;
+      height: 101px;
+      justify-content: center;
+    }
+    .verticalClassRectangle div {
+      transform: rotate(0deg);
+    }
+    .homeCardGreen{
+      flex-direction: column;
+      width: 280px;
+      padding: 10px;
+      margin-top: 60px;
+  
+    }
+    .image{
+      width: 300px;
+    }
+  }
+  @media only screen and (max-width: 900px) {
+    .secondScreenSecondDiv div {
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-between;
+    }
+    .thirdScreen {
+      margin-top: 10vh;
+      height: 100%;
+    }
+    .css-1fyyp8j-MuiGrid-root {
+      min-width: 100%;
+    }
+    .slideshow {
+      position: relative;
+      overflow: hidden;
+      width: 300px!important; /* Adjust the width as needed */
+      height: 260px!important; /* Adjust the height as needed */
+    }
+    .container { 
+      height: 50vh!important;
+    }
+  }
+  
+  @media only screen and (max-width: 900px) {
+    .homeScreenMainTextSecond{
+      font-size: 39px;
+      line-height:45px;
+    }
+    .homeScreenLowerTextSecond{
+      font-size: 13px;
+      line-height: 22px; 
+    }
+  }
+  
+  @media only screen and (max-width: 1000px) {
+    .centralDiv {
+      flex-direction: column;
+      align-items: center;
+      width: 100%;
+    }
+    .fifthScreenMain {
+      flex-direction: column;
+    }
+    .centralDiv div {
+      width: 90%;
+      margin-bottom: 10px!important;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-bottom: 10px;
+    }
+    .homeScreenMainText{
+      font-size: 62px;
+      line-height: 60px;
+    }
+    .homeScreenLowerText{
+      line-height: 25px;
+      font-size: 15px;
+    }
+  }
+  
+  @media only screen and (max-width: 700px) {
+    .industryCardSecondary {
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+    .aboutScreenThirdScreen {
+      flex-direction: column;
+    }
+    .imageCardGallery div {
+      flex-direction: column;
+      align-items: center;
+    }
+    .fifthSubMain {
+      width: 90%;
+    }
+    .verticalClassRectangle {
+      width: 80%;
+    }
+    .verticalClassSquare {
+      width: 80%;
+    }
+    .whatWeDoBestSectionUpperText{
+      flex-direction: column;
+      align-items: center;
+    }
+    .whatWeDoBestSection{
+      min-height: 110vh;
+      text-align: center;
+    }
+    .homeCardGreen{
+  
+      width: 90%;
+      flex-direction: column;
+      text-align: center;
+      height: 100%;
+      margin-bottom: 10px;
+      align-items: center;
+    }
+    .centralDiv div {
+      margin: 0;
+    }
+    .secondaryScreenMain{
+      font-size: 40px;
+      line-height: 50px;
+    }
+  
+    .secondScreen{
+  
+      align-items: center;
+      justify-content: space-evenly;
+    }
+  }
+  
+  @media only screen and (max-width: 900px) {
+    .mainText {
+      font-size: 2.6em;
+    }
+      .homeCardGreen{
+        width: 90%;
+      }
+    .Home_parts__32IPq:first-child{
+      width: 80%;
+    }
+    .whatWeDoBestLowerDivSecond{
+      flex-direction: column;
+      align-items: center;
+    text-align: center;  
+    justify-content: center;
+    }
+    .homeScreenDiv{
+      flex-direction: column;
+      align-items: center;
+    }
+    .homeScreenUpperDiv{
+      width: 90%!important;
+    }
+    .homeScreenLowerText{
+      font-size: 11px;
+    }
+    .homeScreenMainText{
+      font-size: 42px ;
+      line-height: 45px;
+    }
+  }
+  
+  /* styles/Home.module.css */
+  .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+  }
+  
+  .slideshow {
+    position: relative;
+    overflow: hidden;
+    width: 500px; 
+    height: 460px; /* Adjust the height as needed */
+  }
+  
+  .slide {
+    position: absolute;
+    top: 0;
+    opacity: 0;
+    transition: opacity 2s ease-in-out;
+  }
+  
+  @keyframes slideAnimation {
+    0% {
+      opacity: 0;
+      transform: translateY(100%);
+    }
+    5% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+    30% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+    35% {
+      opacity: 0;
+      transform: translateY(0);
+    }
+    100% {
+      opacity: 0;
+      transform: translateY(-100%);
+    }
+  }
+  
+  .slide:nth-child(1) {
+    animation: slideAnimation 12s infinite;
+  }
+  
+  .slide:nth-child(2) {
+    animation: slideAnimation 12s 4s infinite;
+  }
+  
+  .slide:nth-child(3) {
+    animation: slideAnimation 12s 8s infinite;
+  }
+  
