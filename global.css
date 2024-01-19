@@ -69,6 +69,12 @@ body {
   margin: -16px; /* Negative margin to counteract spacing */
 }
 
+.headerDiv{
+  display: flex;
+  justify-content: center;
+align-items: center;
+}
+
 /* Individual grid item */
 .mui-grid-item {
   flex: 1;
@@ -81,7 +87,8 @@ body {
 .header {
   background-color: transparent;
   color: white;
-  padding: 1rem;
+  width:90%;
+  padding: 0.5rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -101,13 +108,12 @@ body {
 .nav a {
   color: white;
   font-size: 1rem;
-  margin: 1rem;
+  margin: 0.8rem;
   text-decoration: none;
 }
 @media (min-width: 900px) {
-  
   .letsTalkButton {
-    width: 171px!important;
+    width: 171px !important;
   }
 }
 
@@ -126,7 +132,7 @@ body {
   position: fixed;
   top: 0;
   left: 0;
-  width: 100%;
+  width: 100vw;
   height: 100%;
   background-color: rgba(0, 0, 0, 0.9); /* Semi-transparent background */
   display: none;
@@ -143,6 +149,23 @@ body {
   text-decoration: none;
 }
 
+.md\:w-1\/2 {
+  display: flex;
+  justify-content: center;
+}
+
+.contactScreenMainText-x {
+  color: #000;
+  text-align: center;
+  leading-trim: both;
+  text-edge: cap;
+  font-family: Hind;
+  font-size: 50px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 60px; /* 120% */
+}
+
 /* Close button for the drawer */
 .close-button {
   position: absolute;
@@ -156,7 +179,6 @@ body {
   .menu-button {
     display: none;
   }
-  
 }
 
 /* Media query for small screens */
@@ -167,8 +189,8 @@ body {
   .nav a {
     font-size: 0.7rem;
   }
-  .header{
-    padding: 2rem;
+  .header {
+    padding: 1.1rem;
   }
   .letsTalkButton {
     display: none; /* Hide the button on small screens */
@@ -201,6 +223,9 @@ body {
 @media (max-width: 600px) {
   .mui-grid-item {
     flex-basis: 100%; /* Full width on small screens */
+  }
+  .mui-grid-item-xs {
+    flex-basis: 40%; /* Full width on small screens */
   }
 }
 
@@ -236,6 +261,12 @@ body {
   width: 195px;
   height: 60px;
   flex-shrink: 0;
+}
+
+@media only screen and (max-width: 412px) {
+  .secondDiv {
+    height: 290vh!important;
+  }
 }
 
 .letsTalkButton div {
@@ -417,8 +448,9 @@ body {
     border-radius: 100px;
     border: 1px solid #fff;
     background: rgba(255, 255, 255, 0.1);
-    width: 155px;
-    height: 50px;
+    width: 140px;
+    font-size: 0.7rem;
+    height: 45px;
     flex-shrink: 0;
   }
   .letsTalkButton div {
@@ -451,18 +483,49 @@ body {
   height: 61px;
 }
 
+@media only screen and (max-width: 1020px) {
+  .secondDiv {
+    height: 157vh;
+  }
+}
+
+@media only screen and (max-width: 765px) {
+  .secondDiv {
+    height: 277vh;
+  }
+}
+@media only screen and (max-width: 778) {
+  .secondDiv {
+    min-height: 490vh;
+  }
+}
+
 /* testimonial section */
 .testimonial_review {
   top: 70%;
   left: 50%;
   width: 45%;
 }
-/* .testimonial_section{
-  position: relative;
-  background-image: url('/public/images/EllipseLeft.png');
-   background-size: cover;
-   background-position: right top;
-} */
+
+.star-rating {
+  font-size: 24px;
+  display: inline-block;
+  color: #f8ce0b; /* Star color */
+}
+
+/* Style for the empty star */
+.star-rating::before {
+  content: "\2606"; /* Unicode character for empty star */
+  margin-right: 5px;
+}
+
+/* Style for the filled star */
+.star-rating.full::before {
+  content: "\2605"; /* Unicode character for filled star */
+}
+.testimonial_section {
+  margin-bottom: 20px;
+}
 @media only screen and (max-width: 1023px) {
   .testimonial_section {
     padding-bottom: 175px;

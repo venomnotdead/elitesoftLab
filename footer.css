@@ -1,134 +1,157 @@
 .mainDiv {
-    width: 100%;
-    
-    color: #fff;
-    font-family: Poppins;
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-    /* background-color: b; */
+  width: 100%;
+
+  color: #fff;
+  font-family: Poppins;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  /* background-color: b; */
+}
+.footerText {
+  position: static;
+  margin-top: 60px;
+  align-items: flex-end;
+}
+
+.backDiv {
+  position: absolute;
+  background-image: url("../public/images/Mask\ group.png");
+  width: 100%;
+  z-index: -1;
+  min-height: 90%;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.lowerDiv {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* min-height: 70vh; */
+}
+
+.firstDiv {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  margin-top: 40px;
+}
+.secondaryDiv {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+}
+
+.footerColumn {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.footerColumn:nth-child(4) {
+  align-items: center !important;
+}
+
+.footerColumn div div {
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.secondDiv {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  justify-content: center;
+}
+
+.fullWidthContainer {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.hr {
+  background: white;
+  height: 1px;
+  width: 173px;
+}
+
+.footerMailText {
+  color: #fff;
+  text-align: center;
+  leading-trim: both;
+  text-edge: cap;
+  font-family: Hind;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+@media only screen and (max-width: 410px) {
+  .footerText{
+    margin-top: -10px;
   }
-  
-  .backDiv {
-    position: absolute;
-    background-image: url("../public/images/Mask\ group.png");
-    width: 100%;
-    z-index: -1;
-    min-height: 90%;
-  }
-  
-  .lowerDiv {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    min-height: 70vh;
-  }
-  
-  .firstDiv {
-    display: flex;
-    justify-content: space-around;
-    width: 100%;
-    margin-top: 40px;
-  }
-  .secondaryDiv {
-    width: 100%;
-    display: flex;
-    justify-content: space-around;
-    align-items: flex-start;
-  }
-  
-  .footerColumn {
-    display: flex;
-    flex-direction: column;
-    /* align-items: flex-start; */
-  }
-  
-  .footerColumn div div {
-    display: flex;
-    align-items: center;
+}
+
+@media only screen and (max-width: 850px) {
+  .footerText{
     margin-top: 10px;
   }
-  
-  .secondDiv {
-    display: flex;
+  .secondaryDiv {
     flex-direction: column;
     align-items: center;
-    width: 100%;
-    justify-content: center;
+    justify-content: flex-start;
+    margin-left: 0;
   }
-  
-  .fullWidthContainer {
-    width: 100%;
-    display: flex;
-    flex-wrap: wrap;
+  .backDiv {
+    min-height: 100%;
   }
-  
-  .hr{
-    background: white;
-    height: 1px;
-    width: 173px;
+  .mainDiv {
+    font-size: 12px;
   }
-  
+  .textField {
+    width: 90%;
+    height: 60%;
+  }
+  .footerColumn {
+    margin-bottom: 20px;
+    align-items: center;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .hr {
+    width: 103px;
+  }
   .footerMailText {
-    color: #fff;
-    text-align: center;
-    leading-trim: both;
-    text-edge: cap;
-    font-family: Hind;
-    font-size: 32px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: normal;
+    font-size: 22px;
   }
-  
-  @media only screen and (max-width: 850px) {
-    .secondaryDiv {
-      flex-direction: column;
-      align-items: center;
-      justify-content: flex-start;
-      margin-left: 0;
-    }
-    .backDiv {
-      min-height: 120%;
-    }
-    .mainDiv{
-      font-size: 12px;
-    }
-    .textField{
-      width: 90%;
-      height:60%
-    }
-    .footerColumn {
-      margin-bottom: 20px;
-    }
+  .footerColumn {
+    align-items: center;
   }
-  
-  
-  @media only screen and (max-width: 600px) {
-    .hr{
-  
-      width: 103px;
-    } 
-    .footerMailText{
-      font-size: 22px;
-    }
-    .footerColumn{
-      align-items: center;
-    }
-    .footerColumn div div {    
-      margin-top: 10px;
-    }
-    .innerColumn{
-      padding: 20px;
-    }
-    .backDiv {
-      min-height: 130%;
-    }
+  .footerColumn div div {
+    margin-top: 10px;
   }
-  @media only screen and (max-width: 600px) {
-    .backDiv {
-      min-height: 135%;
-    }
+  .innerColumn {
+    padding: 20px;
   }
+  .backDiv {
+    min-height: 130%;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .backDiv {
+    min-height: 100%;
+  }
+}
+@media only screen and (max-width: 400px) {
+  .backDiv {
+    min-height: 110% !important;
+  }
+}
